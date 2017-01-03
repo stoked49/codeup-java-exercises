@@ -7,6 +7,6 @@ public class HelloWorld {
         System.out.println("Howdy, world!");
         System.out.println("All java code lives inside of classes");
         System.out.println("Our program runs the 'main' method when executed");
-        System.out.println("Goodbye, world!");''
+        System.out.println("Goodbye, world!");
     }
 }
