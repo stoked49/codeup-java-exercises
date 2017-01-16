@@ -16,7 +16,7 @@ public class Validator {
 
 
 
-    public int getInt(String prompt, Scanner sc) {
+    public int getInt(String prompt) {
         int userInteger;
         System.out.println(prompt);
         try {
@@ -25,7 +25,7 @@ public class Validator {
             System.out.println("Error! Invalid integer value. Try again");
             // Keeps the scanner from "skipping" the next input
             sc.next();
-            return getInt(prompt, sc);
+            return getInt(prompt);
         }
         return userInteger;
     }
@@ -49,16 +49,17 @@ public class Validator {
     }
 
 
-    public double getDouble(String prompt, Scanner sc){
+    public double getDouble(String prompt) {
         double userDouble;
-        System.out.println(prompt);
+        System.out.print(prompt);
         try {
             userDouble = sc.nextDouble();
         } catch (InputMismatchException e) {
             System.out.println("Error! Invalid decimal value. Try again. ");
             sc.next();
+            return getDouble(prompt);
         }
-        return getDouble(prompt, sc);
+        return userDouble;
     }
 
 
@@ -73,12 +74,13 @@ public class Validator {
         } catch (InputMismatchException e) {
             System.out.println("Error! Invalid decimal value.  Try again. ");
             sc.next();
+            return getDoubleWithinRange(prompt, min, max);
         }
-    return getDoubleWithinRange(prompt, min, max);
+    return userDouble;
     }
 
 
-    public String getRequiredString(String prompt, Scanner sc){
+    public String getRequiredString(String prompt) {
         String inputString;
 
         System.out.print(prompt);
@@ -90,7 +92,7 @@ public class Validator {
 
             // Keeps the scanner from "skipping" the next input
             sc.next();
-            return getRequiredString(prompt, sc);
+            return getRequiredString(prompt);
         }
 
         return inputString;

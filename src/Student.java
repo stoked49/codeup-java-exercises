@@ -1,7 +1,7 @@
 /**
  * Created by Irby on 1/9/17.
  */
-public class Student {
+public class Student /*implements Comparable<Student> */ {
     private String firstName, lastName;
     private double score;
 

@@ -23,12 +23,12 @@ public class BattingStats {
         do {
 
 
-            totalAtBats = validator.getInt("Can you tell me how many times the batter has been up to bat for the game in question?", sc);
+            totalAtBats = validator.getInt("Can you tell me how many times the batter has been up to bat for the game in question?");
             basesEarnedArray = new int[totalAtBats];
 
 //      Since the Array of each at bat is created, we can prompt the user for each at bat result and update the array by iterating
             for (int i = 0; i < basesEarnedArray.length; i++) {
-                basesEarnedArray[i] = validator.getInt("Enter bases earned for each at bat please. " + "Result for at bat #" + (i + 1) + " ? : ", sc);
+                basesEarnedArray[i] = validator.getInt("Enter bases earned for each at bat please. " + "Result for at bat #" + (i + 1) + " ? : ");
             }
 
 //      Iterate through the array and tally up all non-zero values to calculate total hits
@@ -50,7 +50,7 @@ public class BattingStats {
             sluggingPercentage = ((double) earnedBases) / totalAtBats;
             System.out.println("The player's slugging percentage for the game is " + numberFormat.format(sluggingPercentage));
         sc.nextLine();
-            proceed = validator.getRequiredString("Another batter? ", sc);
+            proceed = validator.getRequiredString("Another batter? ");
         } while (proceed.equalsIgnoreCase("y"));
 
 

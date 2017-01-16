@@ -8,6 +8,8 @@ public class ListDemo {
         Scanner scan = new Scanner(System.in);
         Validator validator = new Validator(scan);
 
+
+
         Student bob = new Student("Bob", "Bobberson", 44);
         Student jane = new Student("Jane", "Janeway", 33);
         Student pat = new Student("Pat", "Pathews", 44);

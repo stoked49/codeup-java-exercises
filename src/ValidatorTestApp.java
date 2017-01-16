@@ -46,10 +46,10 @@ public class ValidatorTestApp {
         System.out.println("Welcome to the Validator Test App");
         System.out.println("Int Test");
 
-        int userInt = validator.getInt("Enter an integer: ", sc);
+        int userInt = validator.getInt("Enter an integer: ");
         System.out.println("You entered " + userInt);
 
-        double userDouble = validator.getDouble("Enter any double: ", sc);
+        double userDouble = validator.getDouble("Enter any double: ");
         System.out.println("You entered " + userDouble);
 
         int rangedUserInt = validator.getIntWithinRange("Enter any Integer within -100 and 100: ", -100, 100);
@@ -58,7 +58,7 @@ public class ValidatorTestApp {
         double rangedUserDouble = validator.getDoubleWithinRange("Enter any double between -100 and 100: ", -100, 100);
         System.out.println("You entered " + rangedUserDouble);
 
-        String userString = validator.getRequiredString("Please input a string ", sc);
+        String userString = validator.getRequiredString("Please input a string ");
         System.out.println("You entered " + userString);
     }
 
