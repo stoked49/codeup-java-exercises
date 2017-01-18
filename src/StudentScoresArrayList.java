@@ -15,7 +15,7 @@ public class StudentScoresArrayList {
         String proceed;
 
 
-//      Create ArrayList to stor ehe Student Class objects created
+//      Create ArrayList to store the Student Class objects created
         ArrayList <Student> studentReports = new ArrayList<Student>();
 
 //      Welcome User to the App
