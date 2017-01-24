@@ -17,8 +17,8 @@
 //
 //    2. ToDo Create a validator class and a ValidatorTestApp (w/ main method) to test
 //
-//            Create a class called Validator with the following methods
-//            public Validator(Scanner sc)
+//            Create a class called validation.Validator with the following methods
+//            public validation.Validator(Scanner sc)
 //            public int getInt(String prompt)
 //            public int getIntWithinRange(String prompt, int min, int max)
 //            public double getDouble(String prompt)
@@ -29,21 +29,22 @@
 //
 //
 //    3. ToDo     Build the high-low game
-//            - use your Validator class in the main() method of HiLow Game to get inputs
+//            - use your validation.Validator class in the main() method of HiLow Game to get inputs
 //
 //    4. ToDo     Build the ping-pong game
-//            - use the Validator class in the main() method  of Ping-Pong to get inputs
+//            - use the validation.Validator class in the main() method  of Ping-Pong to get inputs
 //              bonus - try to make this as object oriented as possible
 
+import validation.Validator;
+
 import java.util.Scanner;
-import java.util.InputMismatchException;
 
 public class ValidatorTestApp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Validator validator = new Validator(sc);
 
-        System.out.println("Welcome to the Validator Test App");
+        System.out.println("Welcome to the validation.Validator Test App");
         System.out.println("Int Test");
 
         int userInt = validator.getInt("Enter an integer: ");

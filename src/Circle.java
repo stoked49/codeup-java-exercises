@@ -1,7 +1,8 @@
 /**
  * Created by Irby on 1/17/17.
  */
-import java.text.DecimalFormat;
+import validation.Validator;
+
 import java.util.*;
 import java.lang.Math;
 

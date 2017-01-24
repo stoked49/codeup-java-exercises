@@ -1,9 +1,9 @@
 /**
  * Created by Irby on 1/11/17.
  */
+import validation.Validator;
+
 import java.util.Scanner;
-import java.lang.Math;
-import java.util.InputMismatchException;
 
 public class HighLowGame {
     public static void main(String[] args) {

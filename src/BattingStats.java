@@ -1,3 +1,5 @@
+import validation.Validator;
+
 import java.text.DecimalFormat;
 import java.util.Scanner;
 import java.util.stream.IntStream;

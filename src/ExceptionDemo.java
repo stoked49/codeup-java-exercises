@@ -20,8 +20,8 @@ import java.util.Scanner;
 //
 //    2. ToDo Create a validator class and a ValidatorTestApp (w/ main method) to test
 //
-//            Create a class called Validator with the following methods
-//            public Validator(Scanner sc)
+//            Create a class called validation.Validator with the following methods
+//            public validation.Validator(Scanner sc)
 //            public int getInt(String prompt)
 //            public int getIntWithinRange(String prompt, int min, int max)
 //            public double getDouble(String prompt)
